@@ -1,8 +1,7 @@
 // Declaring the dependencies and variables
 const inquirer = require("inquirer");
 const fs = require("fs");
-const InputPrompt = require("inquirer/lib/prompts/input");
-const generateReadme = require("./utils/generateMarkdown");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -160,11 +159,33 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    
+  fs.writeFile(`./dist/${fileName}`, data, (err) => {
+    if (err) {
+      throw err;
+    }
+    console.log("README.md file created!");
+  });
 }
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+  return inquirer.prompt(questions).then((readmeData) => {
+    return readmeData;
+  });
+}
 
 // Function call to initialize app
-init();
+init()
+  .then((readmeData) => {
+    console.log(readmeData);
+    return generateMarkdown(readmeData);
+  })
+  .then((data) => {
+    return writeToFileFile("README.md", data);
+  })
+  .then((writeFileResponse) => {
+    console.log(writeFileResponse.message);
+  })
+  .catch((err) => {
+    console.log(err);
+  });

@@ -159,7 +159,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  fs.writeFile(`./dist/${fileName}`, data, (err) => {
+  fs.writeFile(fileName, data, (err) => {
     if (err) {
       throw err;
     }
@@ -181,10 +181,7 @@ init()
     return generateMarkdown(readmeData);
   })
   .then((data) => {
-    return writeToFileFile("README.md", data);
-  })
-  .then((writeFileResponse) => {
-    console.log(writeFileResponse.message);
+    return writeToFile("README.md", data);
   })
   .catch((err) => {
     console.log(err);

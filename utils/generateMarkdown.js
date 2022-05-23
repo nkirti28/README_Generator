@@ -21,7 +21,7 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseTOC(license) {
   if (license != "no license") {
-    return `*[License](#license)`;
+    return `* [License](#license)`;
   } else {
     return "";
   }
@@ -87,9 +87,9 @@ function generateMarkdown(data) {
   ${data.test}
   ## [Questions](#table-of-contents)
   Please contact me using the following links:
+  
   [GitHub](https://github.com/${data.githubUsername})
   [Email: ${data.email}](mailto:${data.email})
-
 `;
 }
 

@@ -163,7 +163,7 @@ function writeToFile(fileName, data) {
     if (err) {
       throw err;
     }
-    console.log("README.md file created!");
+    console.log("README.md file created successfully!");
   });
 }
 

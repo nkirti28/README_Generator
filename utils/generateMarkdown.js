@@ -78,7 +78,7 @@ function generateMarkdown(data) {
   
   [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
   
-  ![Screenshots](demo/readme_demo.gif)
+  ![Screenshots](demo/Readme_demo.gif)
 
   ${renderLicenseSection(data.license)}
   ## [Contributing](#table-of-contents)

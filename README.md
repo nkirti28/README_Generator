@@ -1,5 +1,5 @@
-# Professional-README-Generator
-   ![badge](https://img.shields.io/badge/license-mit-blue)
+# Professional README.md Generator
+   ![badge](https://img.shields.io/badge/license-MIT-blue)
   ## Table-of-Contents
   * [Description](#description)
   * [Installation](#installation)
@@ -11,7 +11,7 @@
   
   ## [Description](#table-of-contents)
   This application was created to generate a high-quality, professional README depending on a series of questions a user answers in their command line using Node.js
-  ace that potential employers look to evaluate yourFor one thing, it will most likely be the first pl skills and professionalism. And it also allows you to connect with and showcase your work to other developers, which can lead to interesting collaborations.
+  For one thing, it will most likely be the first place that potential employers look to evaluate your skills and professionalism
   This README generator will allow the user to answer a series of specific questions and create a professional complete README based on their responses. It will take a couple minutes and provide the developer with the ability to make their project complete and more professional, increasing the likely hood that someone will want to use their app over similar apps without a README.
   ## [Installation](#table-of-contents)
   The user should clone the repository from GitHub and download Node. This application also requires a file system and inquirer module.
@@ -22,20 +22,23 @@
   
   [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
   
-  
+  ![Screenshots](demo/readme_demo.gif)
+
   ## [License](#table-of-contents)
   The application is covered under the following license:
-  [mit](https://choosealicense.com/licenses/mit)
+  [MIT](https://choosealicense.com/licenses/MIT)
     
   ## [Contributing](#table-of-contents)
   
   
-  Contributors should read the installation section
+  Contributors should read the installation section.
     
   ## [Tests](#table-of-contents)
-  npm test
+  npm tests
   ## [Questions](#table-of-contents)
   Please contact me using the following links:
-  
+
   [GitHub](https://github.com/nkirti28)
+
   [Email: nalawade.kirti@gmail.com](mailto:nalawade.kirti@gmail.com)
+

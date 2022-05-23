@@ -78,7 +78,8 @@ function generateMarkdown(data) {
   
   [Mark Down Tutorial](https://agea.github.io/tutorial.md/)
   
-  
+  ![Screenshots](demo/readme_demo.gif)
+
   ${renderLicenseSection(data.license)}
   ## [Contributing](#table-of-contents)
   
@@ -87,9 +88,11 @@ function generateMarkdown(data) {
   ${data.test}
   ## [Questions](#table-of-contents)
   Please contact me using the following links:
-  
+
   [GitHub](https://github.com/${data.githubUsername})
+
   [Email: ${data.email}](mailto:${data.email})
+
 `;
 }
 
